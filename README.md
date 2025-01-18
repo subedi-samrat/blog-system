@@ -56,13 +56,19 @@ mkdir uploads
 chmod 777 uploads
 ```
 
-6. Access the application:
+6. Access the application using Laragon or XAMPP:
+on Laragon :
+```
+http://blog-system.test
+```
+
+on XAMPP :
 ```
 http://localhost/blog-system
 ```
 
 Default admin credentials:
-- Email: admin@example.com
+- Email: dummy.samr47@gmail.com
 - Password: admin123
 
 ## File Structure
@@ -135,4 +141,4 @@ blog-system/
 
 
 ## Support
-For support, email [] or open an issue in the repository.
+For support, email[sam12subedi34@gmail.com] or open an issue in the repository.
