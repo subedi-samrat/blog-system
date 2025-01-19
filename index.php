@@ -109,7 +109,7 @@ try {
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -138,7 +138,9 @@ try {
                 <p>&copy; 2025 MyBlog. All rights reserved.</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>
