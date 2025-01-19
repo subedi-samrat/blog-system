@@ -19,7 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
 
-            header('Location: ' . ($user['role'] == 'admin' ? '../admin/dashboard.php' : '../index.php'));
+            if ($user['role'] == 'admin') {
+                header('Location: ../admin/dashboard.php');
+            } elseif ($user['role'] == 'author') {
+                header('Location: ../author/dashboard.php');
+            } else {
+                header('Location: ../index.php');
+            }
             exit();
         }
     }
