@@ -1,15 +1,39 @@
 // assets/js/main.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
+    // // Mobile menu toggle
+    // const menuToggle = document.querySelector('.menu-toggle');
+    // const navLinks = document.querySelector('.nav-links');
+    
+    // if (menuToggle) {
+    //     menuToggle.addEventListener('click', function() {
+    //         navLinks.classList.toggle('active');
+    //     });
+    // }
+    
+
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const userDropdown = document.querySelector('.user-dropdown');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
     
-    if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
             navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
         });
     }
-    
+
+    // Mobile dropdown toggle
+    if (dropdownToggle && window.innerWidth <= 768) {
+        dropdownToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdownMenu = this.nextElementSibling;
+            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    }
+
     // Comment form validation
     const commentForm = document.querySelector('.comment-form');
     if (commentForm) {

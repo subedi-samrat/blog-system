@@ -25,6 +25,10 @@ $base_url = '/';
         <nav class="navbar">
             <div class="container">
                 <a href="<?php echo $base_url; ?>" class="logo">MyBlog</a>
+                <!-- Mobile menu toggle -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="search-bar">
                     <form action="<?php echo $base_url; ?>search.php" method="GET">
                         <input type="text" name="q" placeholder="Search...">
