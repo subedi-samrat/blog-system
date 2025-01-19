@@ -52,9 +52,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     <main class="container">
         <section class="category-posts">
             <header class="category-header">
-                <h1><?php echo htmlspecialchars($category['name']); ?></h1>
+                <h1>Category: <?php echo htmlspecialchars($category['name']); ?></h1>
                 <?php if ($category['description']): ?>
-                    <p class="category-description"><?php echo htmlspecialchars($category['description']); ?></p>
+                    <p class="category-description"> Description: <?php echo htmlspecialchars($category['description']); ?></p>
                 <?php endif; ?>
             </header>
 
