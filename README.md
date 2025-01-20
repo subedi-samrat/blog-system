@@ -47,7 +47,7 @@ A complete blog management system built with core PHP and MySQL. Features a mode
 - PHP 7.4 or higher
 - MySQL 5.7 or higher
 - Apache Web Server
-- Laragon (recommended) or XAMPP
+- [Laragon](https://laragon.org/download/) (recommended) or XAMPP
 
 ## Installation
 1. a. Clone the repository to your laragon www folder:
